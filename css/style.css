@@ -1,27 +1,29 @@
-body {
-    background: black;
-}
-
 @font-face {
     font-family: "Sixcaps";
     src: url("../font/SixCaps.ttf")
 }
 
-.container {
-    color: white;
+body {
+    background: black;
     font-family: Sixcaps;
+}
+
+#container {
+    color: white;
     padding: 0px;
     text-align: center;
     justify-content: center;
+    -webkit-animation: 3s ease 2s normal forwards 1 fadein;
+    animation: 3s ease 2s normal forwards 1 fadein;
 }
 
-h3 {
+h2 {
     margin-top: 10%;
     height: 0px;
 }
 
 p {
-    font-size: 80px;
+    font-size: 200px;
     margin-top: 2%;
 }
 
@@ -29,8 +31,6 @@ a {
     position: relative;
     color: #fff;
     text-decoration: none;
-    animation-name: underline;
-    animation-duration: 4s;
     transition: width 2s;
 }
 
@@ -53,4 +53,37 @@ a::before {
 
 a:hover::before {
     transform: scaleX(1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    100% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+    }
 }
