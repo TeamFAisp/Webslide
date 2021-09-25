@@ -7,35 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <div class="slider">
 
-        <a href="#slide-1">1</a>
-        <a href="#slide-2">2</a>
-        <a href="#slide-3">3</a>
-        <a href="#slide-4">4</a>
-        <a href="#slide-5">5</a>
-
-        <div class="slides">
-            <div id="slide-1">
-                1
-            </div>
-            <div id="slide-2">
-                2
-            </div>
-            <div id="slide-3">
-                3
-            </div>
-            <div id="slide-4">
-                4
-            </div>
-            <div id="slide-5">
-                5
-            </div>
-        </div>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#left" class="link-left">Look at that left page</a>
+            </li>
+            <li>
+                <a href="#middle" class="link-middle">Look at that middle page</a>
+            </li>
+            <li>
+                <a href="#right" class="link-right">Look at that right page</a>
+            </li>
+        </ul>
     </div>
+    <!-- /navs -->
+
+    <!--content-->
+    <div class="row">
+        <div class="slidecontainer">
+
+            <div class="slideable">
+                <div class="content-block">
+                    <h1>Leftmost Content</h1>
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <!--content-block-->
+            </div>
+            <!--left-->
+
+            <div class="slideable">
+                <div class="content-block">
+                    <h1>Center Content</h1>
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <!--content-block-->
+            </div>
+            <!--middle-->
+
+            <div class="slideable">
+                <div class="content-block">
+                    <h1>Rightmost Content</h1>
+                    <p>This is the content that lives on the right slideypage</p>
+                </div>
+                <!--content-block-->
+            </div>
+            <!--right-->
+
+        </div>
+        <!--slidecontainer-->
+    </div>
+    <!--row-->
+    <script src="js/index.js"></script>
 </body>
 
 </html>
