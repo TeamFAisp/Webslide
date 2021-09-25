@@ -66,24 +66,56 @@ a {
 
 @keyframes fadein {
     100% {
+        display: block;
         opacity: 0;
     }
     66% {
+        display: block;
         opacity: 0;
     }
     0% {
+        display: none;
         opacity: 1;
     }
 }
 
 @-webkit-keyframes fadein {
     100% {
+        display: block;
         opacity: 0;
     }
     66% {
+        display: block;
         opacity: 0;
     }
     0% {
+        display: none;
         opacity: 1;
     }
+}
+
+
+/*This is a fade out example. */
+
+@keyframes fadeOut {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+    66% {
+        display: none;
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+#slide {
+    animation: 3s ease 2s normal forwards 1 fadeOut;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    display: none;
+    opacity: 0;
 }
