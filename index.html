@@ -7,62 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/index.js"></script>
 </head>
+<!-- Loading screen css -->
 
 <body>
-
-    <div class="navigation">
-        <ul>
-            <li>
-                <a href="#left" class="link-left">Look at that left page</a>
-            </li>
-            <li>
-                <a href="#middle" class="link-middle">Look at that middle page</a>
-            </li>
-            <li>
-                <a href="#right" class="link-right">Look at that right page</a>
-            </li>
-        </ul>
+    <div class="container" id="hideAll">&nbsp;>
+        <h3>The </h3>
+        <p><a>SKY LINE</a></p>
     </div>
-    <!-- /navs -->
-
-    <!--content-->
-    <div class="row">
-        <div class="slidecontainer">
-
-            <div class="slideable">
-                <div class="content-block">
-                    <h1>Leftmost Content</h1>
-                    <img src="img/2.jpg" alt="">
-                </div>
-                <!--content-block-->
-            </div>
-            <!--left-->
-
-            <div class="slideable">
-                <div class="content-block">
-                    <h1>Center Content</h1>
-                    <img src="img/3.jpg" alt="">
-                </div>
-                <!--content-block-->
-            </div>
-            <!--middle-->
-
-            <div class="slideable">
-                <div class="content-block">
-                    <h1>Rightmost Content</h1>
-                    <p>This is the content that lives on the right slideypage</p>
-                </div>
-                <!--content-block-->
-            </div>
-            <!--right-->
-
-        </div>
-        <!--slidecontainer-->
-    </div>
-    <!--row-->
-    <script src="js/index.js"></script>
+    <script type="text/javascript">
+        document.getElementById("hideAll").style.display = "block";
+    </script>
 </body>
 
 </html>
