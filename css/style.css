@@ -2,7 +2,14 @@
 
 
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body{
+  background-color: black;
+  font-family: Verdana, sans-serif; 
+  margin:0;
+}
+#heade{
+  background-image: url(../img/header_bg_1.jpg);
+}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -98,3 +105,27 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+.scroller {
+    height: 100%;
+    overflow-y: none;
+    scroll-snap-type: y mandatory;
+    
+}
+
+.scroller section {
+    scroll-snap-align: start;
+}
+.contains{
+	position: relative;
+}
+.contains img{
+	max-width: 100%;
+	height: auto;
+}
+.text-center{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	color: white;
+}
+
