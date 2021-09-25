@@ -1,0 +1,1 @@
+window.onload = document.getElementsById("container").style.display = "none";
