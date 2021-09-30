@@ -4,22 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="4; url=main.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skyline</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.js"></script>
 
 </head>
 
 <body>
     <div id="container">
         <h2>THE</h2>
-        <p><a href="">SKY LINE</a></p>
+        <p>SKY LINE</p>
+        <span class="Fline"></span><span class="Sline"></span>
     </div>
-    <div id="slide">
-        <img src="img/2.jpg" alt="">
+
+    <div class="main">
+
     </div>
-    <script src="js/index.js"></script>
+    <div class="next"></div>
+
+    <script>
+        $(window).on("load", function() {
+            $("#container").fadeOut(4000, function() {
+                if ($(".main").is(":hidden"))
+                    $(".main").slideDown("slow");
+            });
+
+        });
+    </script>
+
 </body>
 
 </html>
