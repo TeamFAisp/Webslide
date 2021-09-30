@@ -8,28 +8,46 @@
     <title>Skyline</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<body>
+<body style="min-width: 312px;">
     <div id="container">
-        <h2>THE</h2>
+        <p style="font-size:30px;">THE</p>
         <p>SKY LINE</p>
-        <span class="Fline"></span><span class="Sline"></span>
+        <span class="Fline"></span>
     </div>
 
     <div class="main">
-
+        <div class="mainB">
+            <i class="arrow up"></i>
+        </div>
     </div>
-    <div class="next"></div>
+    <div class="next">
+        <div class="carousel">
+            <div class="carousel-img slider1">
+                <p>Hey !</p>
+            </div>
+            <div class="carousel-img slider2">
+                <p>What's up?</p>
+            </div>
+            <div class="carousel-img slider3">
+                <p>How are you doing?</p>
+            </div>
+        </div>
+        <div class="mainC">
+            <i class="arrow down"></i>
+        </div>
+    </div>
 
     <script>
         $(window).on("load", function() {
-            $("#container").fadeOut(4000, function() {
+            $("#container").fadeOut(2500, function() {
                 if ($(".main").is(":hidden"))
                     $(".main").slideDown("slow");
             });
-
         });
     </script>
 
