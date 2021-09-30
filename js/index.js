@@ -1,1 +1,6 @@
-window.onload = document.getElementsById("container").style.display = "none";
+$(document).ready(function() {
+    $(".up").click(function() {
+        $(".next").slideDown("slow");
+    });
+
+});

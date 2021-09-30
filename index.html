@@ -5,20 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skyline</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<body>
+<body style="min-width: 312px;">
     <div id="container">
-        <h2>THE</h2>
-        <p><a href="">SKY LINE</a></p>
+        <p style="font-size:30px;">THE</p>
+        <p style="font-size:200px;" ">SKY LINE</p>
+        <span class=" Fline "></span>
     </div>
-    <div id="slide">
-        <img src="img/2.jpg" alt="">
+
+    <div class="main ">
+        
+        <div class="mainB ">
+            <i class="arrow up "></i>
+        </div>
+        <div class="stu ">
+                <p class="liste " style="font-size: 24px; font-family: 'Montserrat', sans-serif; ">Les membres de notre groupe sont :<br> RABETSIMAMANGA Ikoriantsoa Harena Andrianina IGGLIA 3 n 66 <br> ANDRIANARIVO Dinau Gerald IGGLIA 3 n 59 <br> ANDRIANASOLO Hasina Tovonambinintsoa IGGLIA3 n 50 <br> ANDRIANANTENAINA Rilan Princy Ambinintsoa
+                    IGGLIA 3 n 16 <br> RANDRIAMIHARISOA Andrianjafimana IGGLIA 3 n 81</p>
+    
+        </div>
     </div>
-    <script src="js/index.js"></script>
+    <div class="next ">
+        <div class="carousel ">
+            <div class="carousel-img slider1 ">
+                <p>Hey !</p>
+            </div>
+            <div class="carousel-img slider2 ">
+                <p>What's up?</p>
+            </div>
+            <div class="carousel-img slider3 ">
+                <p>How are you doing?</p>
+            </div>
+        </div>
+        <div class="mainC ">
+            <i class="arrow down "></i>
+        </div>
+    </div>
+
+    <script>
+        $(window).on("load ", function() {
+            $("#container ").fadeOut(2500, function() {
+                if ($(".main ").is(":hidden "))
+                    $(".main ").slideDown("slow ");
+            });
+        });
+    </script>
+
 </body>
 
 </html>
