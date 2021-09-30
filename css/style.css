@@ -5,7 +5,12 @@
 
 body {
     background: black;
-    color: blanchedalmond;
+    color: white;
+}
+
+p {
+    justify-content: center;
+    text-align: center;
 }
 
 #container {
@@ -16,10 +21,6 @@ body {
     align-items: center;
     grid-gap: 5px;
     grid-template-rows: repeat(2, 260px);
-}
-
-p {
-    font-size: 200px;
 }
 
 .main {
@@ -219,4 +220,17 @@ p {
     align-items: center;
     grid-gap: 5px;
     grid-template-rows: repeat(1, 20x);
+}
+
+.stu {
+    position: relative;
+    display: grid;
+    top: 30%;
+    grid-gap: 5px;
+    border: 2px;
+    border-color: white;
+}
+
+.liste {
+    border: 6px double white;
 }
